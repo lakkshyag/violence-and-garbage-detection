@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Analysis Webapp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ADD8E6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #container {
+            max-width: 800px;
+            text-align: left;
+            margin: 150px auto;
+            padding: 20px;
+            background-color: #e8dcca;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #uploadSection, #optionsSection {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #uploadSection h2, #optionsSection h2 {
+            color: #333;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input:hover {
+            background-color: #ADD8E6;
+        }
+
+        #results {
+            text-align: center;
+        }
+
+        #otherStuff {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Video Analysis Webapplication</h1>
+        <br>
+        <form action = "/success" method = "post" enctype="multipart/form-data">
+            <div id="uploadSection">
+                <div id="otherStuff">
+                    <h4>Upload Video:</h4>
+                    <input type="file" id="videoUpload" name="file" required accept="video/*">
+                    <br><br>
+                    <h4>Enter No. of Frames you want to Skip:</h4>
+                    <input type="text" name="frame" required ><br><br>
+                
+                    <h4>Choose Model to Train Uploaded Video On:</h4>
+                    <input type="radio" name="type" value="Violence" checked required > Violence Detection Model <br>
+                    <input type="radio" name="type" value="Garbage" required > Garbage Detection Model<br> <br>
+                </div>                                                               <!--new line-->
+                <br> <input type="submit" value="Upload">
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

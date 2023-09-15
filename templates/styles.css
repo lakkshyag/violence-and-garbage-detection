@@ -1,0 +1,80 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+h1 {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style the main content container */
+#content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Style the file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Style the "Upload Image" button */
+#upload-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style the options container */
+#options {
+    margin-top: 20px;
+}
+
+/* Style the analysis options buttons */
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Style the analysis result container */
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Style the analysis result text */
+#analysisResult {
+    font-size: 18px;
+    font-weight: bold;
+}
